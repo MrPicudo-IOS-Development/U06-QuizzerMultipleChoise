@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quizzler_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Questionapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,19 +27,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-li-mhO">
-                                        <rect key="frame" x="98.666666666666686" y="50" width="193" height="584"/>
+                                        <rect key="frame" x="98.666666666666686" y="50" width="193" height="494"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Hl-IRe">
-                                        <rect key="frame" x="34" y="654" width="322" height="70"/>
+                                        <rect key="frame" x="34" y="564" width="322" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="VBb-lE-956"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="True" backgroundImage="Rectangle">
+                                        <state key="normal" title="TopButton" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -47,17 +47,31 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbn-vQ-GyC">
-                                        <rect key="frame" x="34" y="744" width="322" height="70"/>
+                                        <rect key="frame" x="34" y="654" width="322" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="dno-cr-Wiw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="False" backgroundImage="Rectangle">
+                                        <state key="normal" title="MiddleButton" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wz8-XJ-dgH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avN-lM-8dD">
+                                        <rect key="frame" x="34" y="744" width="322" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="gBG-h4-dDP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="BottomButton" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Yl-y3-aVA"/>
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="TXm-qh-7Xg">
@@ -77,18 +91,18 @@
                                     <constraint firstItem="TXm-qh-7Xg" firstAttribute="leading" secondItem="J9T-Dr-lHV" secondAttribute="leading" id="why-b4-4T0"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="1000" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="eGL-jB-Wwb">
-                                <rect key="frame" x="0.0" y="832" width="430" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="1000" image="fondo001" translatesAutoresizingMaskIntoConstraints="NO" id="eGL-jB-Wwb">
+                                <rect key="frame" x="0.0" y="612" width="430" height="270"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="TYn-lR-doJ"/>
+                                    <constraint firstAttribute="height" constant="270" id="TYn-lR-doJ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.14509803921568626" green="0.17254901960784313" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.28627450980392155" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="J9T-Dr-lHV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3dj-Xx-3Xe"/>
-                            <constraint firstItem="eGL-jB-Wwb" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="FpU-WV-1BQ"/>
+                            <constraint firstItem="eGL-jB-Wwb" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-50" id="FpU-WV-1BQ"/>
                             <constraint firstItem="J9T-Dr-lHV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JCu-yl-OA8"/>
                             <constraint firstItem="J9T-Dr-lHV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jxs-mB-tWr"/>
                             <constraint firstItem="J9T-Dr-lHV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XNM-Re-EPn"/>
@@ -97,11 +111,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="falseButton" destination="tbn-vQ-GyC" id="k5x-kf-PNz"/>
+                        <outlet property="bottomButton" destination="avN-lM-8dD" id="k3u-Sy-3HL"/>
+                        <outlet property="middleButton" destination="tbn-vQ-GyC" id="k5x-kf-PNz"/>
                         <outlet property="progressBar" destination="TXm-qh-7Xg" id="Hum-dC-l6l"/>
                         <outlet property="questionLabel" destination="rSI-li-mhO" id="AOS-za-wDt"/>
-                        <outlet property="scoreLabel" destination="MQk-Pu-wr7" id="i5K-2Y-TxM"/>
-                        <outlet property="trueButton" destination="oVw-Hl-IRe" id="oiG-UY-XDC"/>
+                        <outlet property="scoreLabel" destination="MQk-Pu-wr7" id="3qL-wH-d0Y"/>
+                        <outlet property="topButton" destination="oVw-Hl-IRe" id="oiG-UY-XDC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,8 +125,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background-Bubbles" width="352" height="102"/>
         <image name="Rectangle" width="322" height="68"/>
+        <image name="fondo001" width="341.33334350585938" height="148"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
